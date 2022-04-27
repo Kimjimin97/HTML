@@ -43,29 +43,29 @@
 
 # 문자 콘텐츠
 
-## <ol>, <ul>, <li>
+## ol, ul, li
 
-- <li> : 목록을 만드는 콘텐츠
-- <ol> : 정렬된 목록, 순서가 있음
-- <ul> : 정렬되지 않은 목록 , 순서가 필요 없음
+- li : 목록을 만드는 콘텐츠
+- ol : 정렬된 목록, 순서가 있음
+- ul : 정렬되지 않은 목록 , 순서가 필요 없음
 
-1. <ol> 과 <ul>은 자식으로 <li>만 포함 가능
-2. <li>는 단독으로 사용할 수 없음
-3. <ol>의 항목 순서는 중요도를 의미할 수 있음
+1. ol 과 ul은 자식으로 li만 포함 가능
+2. li는 단독으로 사용할 수 없음
+3. ol의 항목 순서는 중요도를 의미할 수 있음
 
-## <dl>, <dt>, <dd>
+## dl, dt, dd
 
-용어:<dt> 설명:<dd> 쌍들의 영역: <dl>
+용어:dt> 설명:dd> 쌍들의 영역: dl>
 
 - definition term
 - definition details
 - definition list
 
-* <dl>은 <dd>, <dt>만을 포함해야 한다.
+* dl은 dd, t을 포함해야 한다.
 
 # 인라인 텍스트, 수정
 
-## <a>
+## a
 
 다른 url로 연결할 수 있는 하이퍼링크
 속성
@@ -74,21 +74,21 @@
 - rel : 현재 문서와 링크 url의 관계 (license, prev, next)
 - target : 링크 url의 표시 위치 (\_self, \_blank) 현재 창, 새로운 탭
 
-## <span>
+## span
 
 - 인라인 요소, 의미가 없음
-- cf) <div> 블록 요소
+- cf) div> 블록 요소
 
 # 멀티미디어,내장콘텐츠,스크립트
 
-## <img>
+## img
 
 - src
 - alt
 - srcset : 경로 (띄어쓰기) 원본크기
 - sizes : 미디어 조건, 그에 따라 출력될 이미지 크기
 
-### <srcet>
+### src
 
 - 이미지들과 그 이미지들의 원본 크기를 지정
 - 경로, 원본
@@ -148,3 +148,40 @@ min-width : 1000px 이상일 때, 700px
 - allowfullscreen: 전체 화면 모드 사용 여부
 - frameborder: 프레임 테두리 사용 여부
 - sandbox: 보안을 위한 읽기 전용으로 삽입 (allow-form, allow-scrips, allow-same-origin)
+
+# 표 콘텐츠
+
+## table
+
+- tr> : table row, 행
+- th> : table header, 열
+- td> : table data, 열
+
+### th
+
+- abbr: 열에 대한 간단한 설명
+- headers: 관련된 하나 이상의 다른 머리글 칸 id 속성 값
+- colspan: 확장하려는 열의 수
+- rowspan: 확장하려는 행의 수
+- scope: 자신이 누구의 '머리글칸'인지 명시
+
+### td
+
+- headers : th> id 값 연결
+- colspan
+- rowspan
+
+## caption
+
+표의 제목을 설정
+
+- 열리는 table> 태그 바로 다음에 작성
+- table> 당 하나의 caption>을 가짐
+
+# 양식
+
+## form
+
+웹 서버에 정보를 제출하기 위한 양식의 범위
+
+- action
