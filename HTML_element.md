@@ -180,8 +180,58 @@ min-width : 1000px 이상일 때, 700px
 
 # 양식
 
-## form
+## form 태그
 
 웹 서버에 정보를 제출하기 위한 양식의 범위
 
-- action
+- action: 전송한 정보를 처리할 웹페이지의 url
+- autocomplete: 사용자가 이전에 입력한 값으로 자동 완성 기능 여부 확인
+- method: 서버로 전송할 http 방식 (GET, POST)
+- name: 고유한 양식의 이름
+- novalidate: 서버로 전송시 데이터의 유효성을 검사하지 않도록 지정
+- target: 서버로 전송 후 응답받을 방식을 지정
+
+## input 태그
+
+- autocomplete: 자동완성 기능 (on, off)
+- form: form의 id값, form과 연결
+- name: 양식 이름의 값
+- type: 입력 받을 데이터의 종류
+
+### 데이터 종류(type)의 값
+
+- button
+- checkbox
+- file
+- password
+- submit
+- text
+
+## label 태그
+
+라벨 가능 요소, button, input에 붙이는 제목, 캡션
+for 참조할 라벨 가능 요소의 id 속성 값
+
+## button 태그
+
+선택 가능한 버튼 태그
+
+- autofocus
+- disabled
+- form
+- name
+- type
+
+## textarea 태그
+
+여러 줄 일반 텍스트 양식
+
+- rows : 양식의 줄 수
+
+## fieldset, legend 태그
+
+같은 목적의 양식을 그룹하여 제목을 지정
+
+- disabled
+- form
+- name
